@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "人员资质到期巡检",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "机构合规员",
+    "执业人员",
+    "监管人员",
+    "复核专家"
+  ],
+  "states": [
+    "登记",
+    "待核验",
+    "处置中",
+    "已决定",
+    "已归档"
+  ],
+  "invariants": [
+    "资质到期时态",
+    "续期宽限状态",
+    "授权限制传播",
+    "巡检任务幂等"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910032-009-A",
+      "actor": "机构合规员",
+      "state": "登记"
+    },
+    {
+      "case_id": "0910032-009-B",
+      "actor": "复核专家",
+      "state": "待核验"
+    }
+  ],
+  "tags": [
+    "qualification-expiry",
+    "compliance-monitor"
+  ]
+}
